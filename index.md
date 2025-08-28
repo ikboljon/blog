@@ -3,7 +3,7 @@ layout: default
 title: Blog
 permalink: /
 ---
-
+<article class="post">
 <h1 class="tele-title">Blog</h1>
 <p class="tele-sub">Uzbekcha maqolalar — oddiy, toza dizayn, telegra.ph uslubida.</p>
 
@@ -15,3 +15,4 @@ permalink: /
     </li>
   {%- endfor -%}
 </ul>
+</article>
