@@ -1,0 +1,28 @@
+{% capture nav %}
+<div class="topnav">
+  <div>
+    <a href="{{ "/" | relative_url }}">Blog</a>
+  </div>
+  <div>
+    <a href="https://ikboljon.github.io/">Profil</a>
+    <button class="toggle">🌓</button>
+  </div>
+</div>
+{% endcapture %}
+{{ nav }}
+<link rel="stylesheet" href="{{ "/assets/tele.css" | relative_url }}">
+<script>
+  (function(){
+    const root=document.documentElement;
+    const stored=localStorage.getItem('blog-theme');
+    if(stored==='light'){root.classList.add('force-light');}
+    if(stored==='dark'){root.classList.add('force-dark');}
+    window.addEventListener('click', function(e){
+      if(e.target && e.target.classList.contains('toggle')){
+        if(root.classList.contains('force-dark')){root.classList.remove('force-dark');root.classList.add('force-light');localStorage.setItem('blog-theme','light');return;}
+        if(root.classList.contains('force-light')){root.classList.remove('force-light');root.classList.add('force-dark');localStorage.setItem('blog-theme','dark');return;}
+        root.classList.add('force-dark'); localStorage.setItem('blog-theme','dark');
+      }
+    });
+  })();
+</script>

@@ -1,0 +1,17 @@
+title: "Ikboljon — Blog"
+description: "Uzbek posts on AI, research, and life"
+url: "https://ikboljon.github.io"
+baseurl: "/blog"
+
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+minima:
+  skin: classic
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
