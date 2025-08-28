@@ -9,8 +9,9 @@
 </head>
 <body>
   {% include head.html %}
-  <div class="tele-wrap">
+  <main class="tele-wrap">
     {{ content }}
-  </div>
+  </main>
+  <div class="footer">© {{ site.time | date: "%Y" }} Ikboljon — Blog</div>
 </body>
 </html>
