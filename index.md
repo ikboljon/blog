@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Blog
+title: Ikboljon Sobirov
 permalink: /
 ---
-<article class="post">
-<h1 class="tele-title">Blog</h1>
+
+<h1 class="tele-title">Ikboljon Sobirov</h1>
 <p class="tele-sub">Uzbekcha maqolalar — oddiy, toza dizayn, telegra.ph uslubida.</p>
 
 <ul class="tele-ul">
@@ -15,4 +15,3 @@ permalink: /
     </li>
   {%- endfor -%}
 </ul>
-</article>
