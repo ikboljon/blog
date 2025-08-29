@@ -3,7 +3,7 @@ layout: default
 title: Ikboljon Sobirov
 permalink: /
 ---
-<article>
+<section class="wrap">
 <h1 class="tele-title">Ikboljon Sobirov</h1>
 <p class="tele-sub">Uzbekcha maqolalar — oddiy, toza dizayn, telegra.ph uslubida.</p>
 
@@ -15,4 +15,4 @@ permalink: /
     </li>
   {%- endfor -%}
 </ul>
-</article>
+</section>
